@@ -1,17 +1,17 @@
-1.9.3p125 :001 > q = Order.new
- => #<Order id: nil, state: "new", name: nil, created_at: nil, updated_at: nil>
-1.9.3p125 :002 > q.can_complite?
- => true
-1.9.3p125 :003 > q.complite!
-   (0.1ms)  begin transaction
-   (0.0ms)  rollback transaction
-StateMachine::InvalidTransition: Cannot transition state via :complite from :new (Reason(s): State cannot transition via "complite")
-  from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/state_machine-1.1.2/lib/state_machine/event.rb:241:in `block in add_actions'
-  from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/state_machine-1.1.2/lib/state_machine/machine.rb:753:in `call'
-  from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/state_machine-1.1.2/lib/state_machine/machine.rb:753:in `block (2 levels) in define_helper'
-  from (irb):3
-  from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.8/lib/rails/commands/console.rb:47:in `start'
-  from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.8/lib/rails/commands/console.rb:8:in `start'
-  from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.8/lib/rails/commands.rb:41:in `<top (required)>'
-  from script/rails:6:in `require'
-  from script/rails:6:in `<main>'
+  1.9.3p125 :001 > q = Order.new
+   => #<Order id: nil, state: "new", name: nil, created_at: nil, updated_at: nil>
+  1.9.3p125 :002 > q.can_complite?
+   => true
+  1.9.3p125 :003 > q.complite!
+     (0.1ms)  begin transaction
+     (0.0ms)  rollback transaction
+  StateMachine::InvalidTransition: Cannot transition state via :complite from :new (Reason(s): State cannot transition via "complite")
+    from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/state_machine-1.1.2/lib/state_machine/event.rb:241:in `block in add_actions'
+    from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/state_machine-1.1.2/lib/state_machine/machine.rb:753:in `call'
+    from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/state_machine-1.1.2/lib/state_machine/machine.rb:753:in `block (2 levels) in define_helper'
+    from (irb):3
+    from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.8/lib/rails/commands/console.rb:47:in `start'
+    from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.8/lib/rails/commands/console.rb:8:in `start'
+    from /Users/vad4msiu/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.8/lib/rails/commands.rb:41:in `<top (required)>'
+    from script/rails:6:in `require'
+    from script/rails:6:in `<main>'
