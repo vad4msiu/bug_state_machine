@@ -4,8 +4,8 @@ class Order < ActiveRecord::Base
   before_create :bug_callback, :if => :check_method
 
   state_machine :state, :initial => :new do
-    event :complite do
-      transition :new => :complited
+    event :complete do
+      transition :new => :completed
     end
   end
 
@@ -16,6 +16,6 @@ class Order < ActiveRecord::Base
   end
 
   def bug_callback
-    complite
+    complete
   end
 end
